@@ -19,8 +19,7 @@ namespace GradeBook.GradeBooks
                 if (Students[i].AverageGrade > averageGrade) betterStudentsCount++;
             }
             double rank = (double)(betterStudentsCount+1) / Students.Count;
-            Console.WriteLine(rank);
-            System.Diagnostics.Debug.WriteLine("Matrix has you...");
+            //
             if (rank <= .2) return 'A';
             else if (rank <= .4) return 'B';
             else if (rank <= .6) return 'C';
